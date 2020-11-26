@@ -1,0 +1,67 @@
+# ZX-RC2014
+# Note the slew rate is set to "slow" in the Fitter properties to help improve the clock signal to the Z80
+
+NET "iCLK28" BUFG=CLK;
+NET "iCLK28" TNM_NET = "iCLK28" ;
+TIMESPEC "TS_clkin" = PERIOD "iCLK28" 35.714285714286 ns;
+
+NET "iCLK28"		LOC = "P27"  ;
+NET "iCS" 			LOC = "P16"  ;
+NET "oROMCE"  		LOC = "P03"  ; # RC2014 main board connector pin 40 to orange wire on ROM module
+NET "oRAMCE"  		LOC = "P04"  ; # RC2014 main board connector pin 39 to green wire on lower 16K RAM Module
+NET "oRAMOE"  		LOC = "P01"  ; # RC2014 main board connector pin 38 to black wire on lower 16K RAM module
+NET "oRAMWE"  		LOC = "P02"  ; # RC2014 main board connector pin 37 to yellow wire on lower 16K RAM module
+NET "iMREQ"  		LOC = "P19"  ;
+NET "iWR"  			LOC = "P18"  ;
+NET "iRD"  			LOC = "P17"  ;
+NET "iA14" 			LOC = "P49"  ;
+NET "iA15" 			LOC = "P50"  ;
+NET "iA0" 			LOC = "P06"  ;
+
+NET "oVRAM_A<13>"	LOC = "P46"  ;
+NET "oVRAM_A<12>"	LOC = "P43"  ;
+NET "oVRAM_A<11>"	LOC = "P42"  ;
+NET "oVRAM_A<10>"	LOC = "P41"  ;
+NET "oVRAM_A<9>" 	LOC = "P40"  ;
+NET "oVRAM_A<8>" 	LOC = "P39"  ;
+NET "oVRAM_A<7>" 	LOC = "P37"  ;
+NET "oVRAM_A<6>" 	LOC = "P36"  ;
+NET "oVRAM_A<5>" 	LOC = "P35"  ;
+NET "oVRAM_A<4>" 	LOC = "P34"  ;
+NET "oVRAM_A<3>" 	LOC = "P33"  ;
+NET "oVRAM_A<2>" 	LOC = "P32"  ;
+NET "oVRAM_A<1>"	LOC = "P30"  ;
+NET "oVRAM_A<0>"	LOC = "P29"  ;
+
+NET "oCPU"  		LOC = "P22"  ;
+NET "oINT"  		LOC = "P20"  ;
+NET "oVVSync_n"  	LOC = "P81"  ;
+NET "oHHSync_n"  	LOC = "P82"  ;
+NET "iULA_D<7>"		LOC = "P08"  ;
+NET "iULA_D<6>"		LOC = "P09"  ;
+NET "iULA_D<5>"		LOC = "P10"  ;
+NET "iULA_D<4>"		LOC = "P11"  ;
+NET "iULA_D<3>"		LOC = "P12"  ;
+NET "iULA_D<2>"		LOC = "P13"  ;
+NET "iULA_D<1>"		LOC = "P14"  ;
+NET "iULA_D<0>"		LOC = "P15"  ;
+NET "iKB<0>"		LOC = "P92"  ;
+NET "iKB<1>"  		LOC = "P93"  ;
+NET "iKB<2>"  		LOC = "P94"  ;
+NET "iKB<3>"  		LOC = "P95"  ;
+NET "iKB<4>"  		LOC = "P96"  ;
+NET "iEAR"  		LOC = "P86"  ;
+NET "oSOUND"	  	LOC = "P97"  ;
+NET "oMIC"  		LOC = "P91"  ;
+NET "oRED<3>"		LOC = "P71"  ;
+NET "oRED<2>"		LOC = "P72"  ;
+NET "oRED<1>"		LOC = "P73"  ;
+NET "oRED<0>"		LOC = "P74"  ;
+NET "oGREEN<3>"		LOC = "P66"  ;
+NET "oGREEN<2>"  	LOC = "P67"  ;
+NET "oGREEN<1>"  	LOC = "P68"  ;
+NET "oGREEN<0>"  	LOC = "P70"  ;
+NET "oBLUE<3>"  	LOC = "P61"  ;
+NET "oBLUE<2>"  	LOC = "P63"  ;
+NET "oBLUE<1>"  	LOC = "P64"  ;
+NET "oBLUE<0>"  	LOC = "P65"  ;
